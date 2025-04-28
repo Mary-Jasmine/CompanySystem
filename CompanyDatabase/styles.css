@@ -1,0 +1,332 @@
+:root {
+  --primary: #007502;
+  --primary-light: #ffd1e8;
+  --primary-dark: #d44ab4;
+  --accent: #35ffe4;
+  --text: #1c1c1c;
+  --text-light: #666666;
+  --background: #fff8fa;
+  --card-bg: #ffffff;
+  --border: #ffcce5;
+  --shadow: rgba(255, 105, 180, 0.2);
+}
+
+body {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  background:linear-gradient(to bottom, rgb(4, 4, 92), rgb(0, 132, 255)) ;
+  color: white;
+  padding: 20px 0;
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+.header-content {
+  justify-content: center;
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+ h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  color: rgb(2, 14, 186);
+  margin-top: 0;
+}
+
+h3 {
+  text-align: center;
+  color: rgb(127, 12, 12);
+  margin-top: 0;
+}
+
+header h1 {
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin: 0;
+  font-weight: 600;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  background:linear-gradient(to bottom, rgb(111, 163, 227), rgb(255, 255, 255)) ;
+  padding: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px var(--shadow);
+  margin: 20px 0;
+}
+
+.nav a {
+  font-weight: 200;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin: 0 15px;
+  text-decoration: none;
+  color:rgb(4, 40, 113);
+  position: relative;
+  padding: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.nav a:hover {
+  color: blue;
+}
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px var(--shadow);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+th, td {
+  padding: 8px 14px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+
+th {
+  background-color: rgb(22, 80, 134);
+  color: rgb(243, 243, 243);
+  font-weight: 600;
+}
+
+tr:hover {
+  background-color: var(--primary-light);
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: blue;
+  color: #6f0e0e;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: blue;
+}
+
+.btn-danger {
+  background-color: #e3dddd;
+}
+
+.btn-danger:hover {
+  background-color: #3fb5bb;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bolder;
+  display: block;
+  margin-bottom: 8px;
+  color: rgb(12, 12, 159);
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-light);
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(56, 56, 146);
+}
+
+.back-link {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  color: rgb(56, 119, 156);
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.action-links a {
+  margin-right: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.action-links a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+
+.empty-message {
+  text-align: center;
+  padding: 20px;
+  color: var(--text-light);
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: var(--primary);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: rgb(56, 104, 56);
+  transform: scale(1.05);
+}
+
+.btn-danger {
+  background-color: #f01010e2;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #db4242;
+}
+
+.btn-view {
+  background-color: #0765b2;
+  color: white;
+  padding: 8px 10px;
+  min-width: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(33, 150, 243, 0.2);
+}
+
+.btn-view:hover {
+  background-color: #1976D2;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(33, 150, 243, 0.3);
+}
+
+.Loan-breakdown th{
+  background-color: rgb(143, 163, 182);
+  color: rgb(243, 243, 243);
+  font-weight: 600; 
+}
+
+.search-container {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2px;
+}
+
+.search-container form {
+  display: flex;
+  flex: 3; 
+  gap: 10px;
+}
+
+.search-container input {
+  flex: 1; 
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  min-width: 500px; 
+}
+
+.search-container button[type="submit"] {
+  padding: 10px 10px;
+  background-color: rgb(50, 50, 106);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap; 
+}
+
+.search-container button[type="submit"]:hover {
+  background-color: green;
+}
